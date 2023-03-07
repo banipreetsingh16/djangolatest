@@ -1,0 +1,14 @@
+<div>
+    {% for d in data %}
+       <h3><b>{{d.first_name}}</b></h3>
+       <h3><b>{{d.middle_name}}</b></h3>
+       <h3><b>{{d.last_name}}</b></h3>
+       <p>{{d.work_experience}}</p>
+       <p>{{d.latest_education_degree}}</p>
+       <em>{{d.is_published}}</em>
+       <!-- <em>{{blog.author}}</em><br> -->
+       <br>
+       <a href = "/demo/{{d.pk}}/update">Edit</a> || <a href="/demo/{{d.pk}}/delete">Delete</a>   
+       <hr> 
+    {%endfor%}
+</div>
